@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(24, 49, 68);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+}
+
+input[type=submit]:hover {
+  background-color: rgb(24, 49, 68);
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label{
+	font-size: 30px;
+}
+
+.bottom{
+	font-size: 30px	;
+}
+
+.texto{
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+    <div>
+			<form class="forms" action="inserirUsuario" method="post">
+
+            <label class="data" for="id"> Id do usuario: </label>   
+            <input type="text" name="id" class="texto" required>   
+
+            <label class="data" for="nome"> Nome: </label>   
+            <input type="text" name="nome" class="texto" required>   
+
+            <label class="data" for="sobrenome"> Sobrenome: </label> 
+            <input type="text" name="sobrenome" class="texto" required>  
+            
+            <label class="data" for="idade"> Idade: </label>  
+            <input type="text" name="idade" class="texto" required>  
+            
+            <label class="data" for="cdBarras"> Codigo de barras da pulseira:(Somente numero e ate 9 digitos) </label>  
+            <input type="text" name="cdBarras" class="texto" required>  
+            
+            <label class="data" for="matricula"> Matricula da pulseira(ate 9 digitos): </label>  
+            <input type="text" name="matricula" class="texto" required >  
+
+              
+
+            <input class="bottom" type="submit" value="Inserir Usuario">
+        </form>
+        
+        </div>
+
+</body>
+</html>

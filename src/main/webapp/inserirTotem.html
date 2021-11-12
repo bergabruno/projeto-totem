@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(24, 49, 68);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+}
+
+input[type=submit]:hover {
+  background-color: rgb(24, 49, 68);
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label{
+	font-size: 30px;
+}
+
+.bottom{
+	font-size: 30px	;
+}
+
+.texto{
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+    <div>
+			<form class="forms" action="inserirTotem" method="post">
+
+            <label class="data" for="id"> Id do Totem: </label> 
+            <input type="text" name="id" class="texto" required> 
+
+            <label class="data" for="pais"> Pais: </label> 
+            <input type="text" name="pais" class="texto" required> 
+
+            <label class="data" for="cidade"> Cidade: </label>
+            <input type="text" name="cidade" class="texto" required> 
+            
+            <label class="data" for="bairro"> Bairro: </label>
+            <input type="text" name="bairro" class="texto" required> 
+            
+            <label class="data" for="longitude"> Longitude: </label> 
+            <input type="text" name="longitude" class="texto" required> 
+            
+            <label class="data" for="latitude"> Latitude: </label> 
+            <input type="text" name="latitude" class="texto" required > 
+
+            <br>
+            <input class="bottom" type="submit" value="Inserir Totem">
+        </form>
+        
+        </div>
+
+</body>
+</html>
